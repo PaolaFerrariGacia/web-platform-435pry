@@ -1,0 +1,36 @@
+body {
+  background: paleturquoise;
+  
+}
+
+svg{
+  background-color:ivory;
+  
+}
+
+.circ{
+  r: 50;
+  animation: palpita 4s infinite;
+}
+
+.recta{
+  width : 200;
+  animation: largo 4s infinite;
+}
+
+@keyframes palpita{
+0% {opacity: 100%; r: 10; fill: magenta;}
+40% {opacity: 30%; r: 100; fill: cyan;}
+50% {opacity: 50%; r: 70; fill: yellow;}
+60% {opacity: 30%; r: 100;fill: cyan;}
+100% {opacity: 100%; r: 10; fill: magenta;}
+}
+
+@keyframes largo{
+0%{opacity: 100%; width: 20;} 
+40%{opacity: 50%; width: 200;}
+50%{opacity: 70%; width: 140;}
+60%{opacity: 50%; width: 200;}
+100%{opacity: 100%; width: 20;}
+
+}
